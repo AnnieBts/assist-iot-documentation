@@ -11,12 +11,12 @@ Distributed broker enabler
 ***************
 Introduction
 ***************
-This enabler will provide a mechanism that will facilitate data sharing between different heterogene-ous IoT devices belonging to various edge domains and/or between different enablers of the archi-tecture. In coordination with other enablers that will ensure trust between data sources (i.e. Identity and Authorisation providers), it will deal with data source metadata management and provide trust-able, findable, and retrievable metadata for the data sources.
+This enabler will provide a mechanism that will facilitate data sharing between heterogeneous IoT devices belonging to various edge domains and/or between different enablers of the architecture. Uisng the security features of DLT, it will deal with data source metadata management and provide to the data consumers trustable, findable, and retrievable metadata for the data sources.
 
 ***************
 Features
 ***************
-It will serve as a trusted registry of all the IoT domains/devices and/or ASSIST-IoT enablers that act as data producers. Indexing and querying services will facilitate the efficient retrievability of the stored metadata of the registered producers by consumers in compliance with the FAIR principles.
+ Indexing and querying services will facilitate the efficient retrievability of the stored metadata of the registered producers by consumers in compliance with the FAIR principles.
 
 *********************
 Place in architecture
