@@ -11,12 +11,16 @@ DLT-based FL enabler
 ***************
 Introduction
 ***************
-This enabler will foster the use of DLT-related components to exchange the local, on-device models (or model gradients) in a decentralised way. 
+The FL-DLT enabler is a system that provides a secure reputation mechanism for all local operators in a federated learning (FL) system. The reputation mechanism serves as a safeguard against free-riders and malicious adversaries, ensuring that only reputable local operators can contribute to the global model.
+ 
 
 ***************
 Features
 ***************
-The DLT can act as a component to manage AI contex-tual information and prevent any alteration to the data. The alteration of data is a threat to the Fed-erated Learning approach and the DLT can help in mitigating the threat. Moreover, the enabler will allow mitigating single-point of failures. Finally, the enabler can be charged with validating the in-dividually trained models to rule out malicious updates that can harm the global model.
+ The integration of the DLT enabler with the FL baseline system involves the calculation of reputation scores for each FL local operator instance, which is stored on a permissioned blockchain network that allows only authorized users to access the scores and participate in the consensus algorithm that updates them. The final reputation score for each local operator is calculated using the cosine similarity between the weights of FL local operations and the aggregated weight. The FL training collector queries the reputation scores and reputation set to decide on penalties or incentives for the FL local operations. 
+
+The FL-DLT enabler consists of three components: the DLT communicator, the reputation score calculator, and the DLT storage. The DLT communicator is a RESTful API that receives weights from the training collector and fetches reputation scores and reputation sets from the DLT storage. The reputation score calculator applies the reputation mechanism and calculates scores for each local operator in each training round. The DLT storage component stores the reputation scores and the reputation set to the Distributed Ledger.
+
 
 *********************
 Place in architecture
