@@ -16,7 +16,7 @@ The DLT-based FL enabler is a system that provides a secure reputation mechanism
 ***************
 Features
 ***************
-The DLT can act as a component to manage AI contextual information and prevent any alteration to the data. The alteration of data is a threat to the Federated Learning approach and the DLT can help in mitigating the threat. Moreover, the enabler allows mitigating single-point of failures. Finally, the enabler can be charged with validating the individually trained models to rule out malicious updates that can harm the global model.
+The FL-DLT enabler encompasses a suite of features aimed at enhancing the integrity and efficiency of federated learning (FL) systems. Central to its functionality is the establishment of a robust reputation mechanism tailored for local operators within the FL ecosystem. This mechanism acts as a protection against undesirable actors such as free-riders and malicious adversaries, ensuring that only reputable contributors influence the global model. Seamlessly integrated with the FL baseline system, the enabler orchestrates the calculation and storage of reputation scores for each local operator instance. Leveraging a permissioned blockchain network, these scores are securely stored, limiting access to authorized users. The computation of final reputation scores employs advanced techniques such as cosine similarity, comparing weights of local operations with the aggregated weight. Additionally, the FL training collector queries the blockchain ledger to inform decisions on imposing penalties or providing incentives, thereby fostering a cooperative and accountable FL environment.
 
 *********************
 Place in architecture
